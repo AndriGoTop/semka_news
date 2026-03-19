@@ -14,7 +14,6 @@ class Post(PostCreate, table=True):
     created_at: datetime = Field(default=datetime.now())
     updated_at: datetime = Field(default=datetime.now())
 
-
 class PostPublic(PostCreate):
     id: int
 
